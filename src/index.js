@@ -37,6 +37,7 @@ class Vimeo extends React.Component {
       autopause: this.props.autopause,
       autoplay: this.props.autoplay,
       byline: this.props.showByline,
+      playsinline: this.props.playsinline,
       color: this.props.color,
       controls: this.props.controls,
       loop: this.props.loop,
@@ -233,6 +234,11 @@ if (process.env.NODE_ENV !== 'production') {
     autoplay: PropTypes.bool,
 
     /**
+     * Play inline to assist autoplay on mobile.
+     */
+    playsinline: PropTypes.bool,
+
+    /**
      * Show the byline on the video.
      */
     showByline: PropTypes.bool,
@@ -357,6 +363,7 @@ Vimeo.defaultProps = {
   autopause: true,
   autoplay: false,
   showByline: true,
+  playsinline: false,
   controls: true,
   loop: false,
   showPortrait: true,

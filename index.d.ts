@@ -218,6 +218,11 @@ export interface VimeoProps {
   showTitle?: boolean
 
   /**
+   * Plays inline to help with autoplay
+   */
+  playsinline?: boolean
+
+  /**
    * Starts in a muted state to help with autoplay
    */
   muted?: boolean
