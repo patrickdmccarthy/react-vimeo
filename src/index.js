@@ -363,7 +363,7 @@ Vimeo.defaultProps = {
   autopause: true,
   autoplay: false,
   showByline: true,
-  playsinline: false,
+  playsinline: true,
   controls: true,
   loop: false,
   showPortrait: true,
