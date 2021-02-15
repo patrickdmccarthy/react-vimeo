@@ -37,6 +37,7 @@ import Vimeo from '@u-wave/react-vimeo';
 | start | number |  | The time in seconds at which to start playing the video. |
 | autopause | bool | true | Pause this video automatically when another one plays. |
 | autoplay | bool | false | Automatically start playback of the video. Note that this won’t work on some devices. |
+| playsinline | bool | false | Play inline to assist autoplay on mobile. |
 | showByline | bool | true | Show the byline on the video. |
 | color | string |  | Specify the color of the video controls. Colors may be overridden by the embed settings of the video. _(Ex: "ef2f9f")_ |
 | controls | bool | true | Hide all elements in the player (play bar, sharing buttons, etc). |
@@ -58,8 +59,9 @@ import Vimeo from '@u-wave/react-vimeo';
 | onCueChange | function |  | Triggered when the active cue for the current text track changes. It also fires when the active text track changes. There may be multiple cues active. |
 | onCuePoint | function |  | Triggered when the current time hits a registered cue point. |
 | onVolumeChange | function |  | Triggered when the volume in the player changes. Some devices do not support setting the volume of the video independently from the system volume, so this event will never fire on those devices. |
-| onPlaybackRateChange | function |  | Triggered when the playback rate changws. |
+| onPlaybackRateChange | function |  | Triggered when the playback rate changes. |
 | onLoaded | function |  | Triggered when a new video is loaded in the player. |
+
 
 
 ## Related
